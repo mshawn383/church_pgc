@@ -9,7 +9,7 @@ pub fn Navigation() -> impl IntoView {
           <div class="max-w-7xl mx-auto flex items-center">
 
             <div class="flex-1">
-              <span class="text-2xl font-light text-[#4285F4] cursor-pointer" on:click=move |_| navigate("/",Default::default())>PGC</span>
+              <span class="text-2xl font-light text-[#4285F4] cursor-pointer font-extrabold" on:click=move |_| navigate("/",Default::default())>PGC</span>
             </div>
 
 

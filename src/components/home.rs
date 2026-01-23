@@ -2,43 +2,46 @@ use leptos::prelude::*;
 use leptos_router::{components::A, hooks::use_navigate};
 #[component]
 pub fn Home() -> impl IntoView {
-    view! {    <section
-          class="relative w-full h-[95vh] bg-gradient-to-br from-blue-50 via-white to-purple-50 flex flex-col items-center justify-center"
+    view! {    
+
+    <section
+          class="relative w-full h-[95vh] bg-white flex flex-col overflow-hidden"
+          style="background: url('https://images.pexels.com/photos/938141/pexels-photo-938141.jpeg') no-repeat top; background-size: 100% 60%;"
         >
 
-         <div class="text-center mb-12">
-      <div>
-        <p class="text-sm md:text-base tracking-widest text-[#4285F4] font-semibold uppercase mb-2">
-          Welcome to
-        </p>
+         <div class="h-1/2"></div>
 
-        <h1 class="text-5xl md:text-7xl font-light text-gray-900 leading-tight">
+         <div class="h-1/2 flex flex-col items-center justify-center w-full">
+      <div class="text-center mb-8">
+        <h1 class="text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-3">
           PGC Church
         </h1>
 
-        <p class="text-lg md:text-xl text-gray-600 mt-4 font-light">
+        <p class="text-base md:text-lg text-gray-600 font-light max-w-md mx-auto">
           Join us for faith, community, and spiritual growth
         </p>
       </div>
-    </div>
 
-     <div class="flex flex-col gap-4">
+     <div class="flex flex-col gap-3 sm:flex-row sm:gap-4">
 
       <A
         href="/events"
-        attr:class="inline-block px-8 py-3 bg-[#4285F4] text-white font-medium rounded-lg text-base hover:bg-[#3367D6] transition shadow-md"
+        attr:class="px-8 py-2.5 bg-[#4285F4] text-white font-medium rounded-lg text-sm hover:bg-[#3367D6] transition"
       >
         Upcoming Events
       </A>
 
       <a
         href="#"
-        class="inline-block px-8 py-3 border-2 border-[#4285F4] text-[#4285F4] font-medium rounded-lg text-base hover:bg-blue-50 transition"
+        class="px-8 py-2.5 border border-[#4285F4] text-[#4285F4] font-medium rounded-lg text-sm hover:bg-blue-50 transition"
       >
         Prayer Request
       </a>
 
     </div>
+    </div>
 
-        </section>}
+        </section>
+     
+      }
 }
