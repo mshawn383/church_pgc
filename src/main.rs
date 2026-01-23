@@ -9,6 +9,8 @@ use components::events::Events;
 use components::home::Home;
 use components::navigation::Navigation;
 
+use components::gallery::Gallery;
+
 fn main() {
     mount_to_body(|| {
         view! {
@@ -18,6 +20,7 @@ fn main() {
                       <Route path=path!("/") view=Home />
                       <Route path=path!("/daily-quotes") view=DailyQuotes />
                       <Route path=path!("/events") view=Events />
+                      <Route path=path!("/gallery") view=Gallery />
                   </Routes>
               </Router>
 
