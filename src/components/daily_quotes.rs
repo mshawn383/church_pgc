@@ -111,24 +111,82 @@ pub fn DailyQuotes() -> impl IntoView {
         bg-white 
         rounded-lg 
         p-6 
+        border-l-4 border-l-[#4285F4] border border-gray-200 
+        flex flex-col 
+        min-h-[200px]
+        hover:shadow-md transition-shadow
+    ">
+      <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
+        Life is either a daring adventure or nothing at all.
+      </p>
+      <p class="text-sm text-gray-600 italic">
+        Helen Keller
+      </p>
+      <p class="text-xs text-gray-400 mt-auto pt-6">
+        Nov 12, 2023
+      </p>
+    </div>
+
+    <div class="
+        bg-white 
+        rounded-lg 
+        p-6 
+        border-l-4 border-l-[#EA4335] border border-gray-200 
+        flex flex-col 
+        min-h-[200px]
+        hover:shadow-md transition-shadow
+    ">
+      <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
+        The purpose of our lives is to be happy.
+      </p>
+      <p class="text-sm text-gray-600 italic">
+        Dalai Lama
+      </p>
+      <p class="text-xs text-gray-400 mt-auto pt-6">
+        Nov 11, 2023
+      </p>
+    </div>
+
+    <div class="
+        bg-white 
+        rounded-lg 
+        p-6 
+        border-l-4 border-l-[#FBBC04] border border-gray-200 
+        flex flex-col 
+        min-h-[200px]
+        hover:shadow-md transition-shadow
+    ">
+      <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
+        Be yourself; everyone else is already taken.
+      </p>
+      <p class="text-sm text-gray-600 italic">
+        Oscar Wilde
+      </p>
+      <p class="text-xs text-gray-400 mt-auto pt-6">
+        Nov 10, 2023
+      </p>
+    </div>
+
+    <div class="
+        bg-white 
+        rounded-lg 
+        p-6 
         border-l-4 border-l-[#34A853] border border-gray-200 
         flex flex-col 
         min-h-[200px]
         hover:shadow-md transition-shadow
     ">
       <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
-        Life is what happens when you re busy making other plans.
+        It is during our darkest moments that we must focus on the light.
       </p>
       <p class="text-sm text-gray-600 italic">
-        John Lennon
+        Aristotle
       </p>
       <p class="text-xs text-gray-400 mt-auto pt-6">
-        Nov 13, 2023
+        Nov 09, 2023
       </p>
     </div>
-
-  </div>
-
+</div>
 </div>
         }
 }

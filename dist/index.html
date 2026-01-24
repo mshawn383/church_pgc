@@ -18,48 +18,16 @@
    .church-header-and-prophet-name{
     font-weight: 700;
    }
-   @keyframes float {
-          0%, 100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-20px);
-          }
-        }
-        
-        @keyframes float-delayed {
-          0%, 100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-15px);
-          }
-        }
-        
-        .float-animation {
-          animation: float 6s ease-in-out infinite;
-        }
-        
-        .float-animation-delayed {
-          animation: float-delayed 5s ease-in-out infinite 1s;
-        }
-        
-        .float-animation-delayed-2 {
-          animation: float-delayed 5.5s ease-in-out infinite 2s;
-        }
-        
-        .text-glow {
-          text-shadow: 0 0 30px rgba(66, 133, 244, 0.1);
-        }
+  
 </style>
     <title>PGC Church</title>
-<link rel="modulepreload" href="/pgc_church-cc7ba168cbae3a47.js" crossorigin="anonymous" integrity="sha384-f5LYfU+K7cwLoiMR/gidw/CmoB0OXK7CzfV9K4I3UIVnVbbeMDfDN6dtoQ9bgv7e"><link rel="preload" href="/pgc_church-cc7ba168cbae3a47_bg.wasm" crossorigin="anonymous" integrity="sha384-qFi8kuFbObIIEbbt+dU/7oJIY3ZOP+1iAL8a55BvM0B86Ubi5nNKoDkOTkwMC1Ik" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/pgc_church-2f7c9a25a522d247.js" crossorigin="anonymous" integrity="sha384-f5LYfU+K7cwLoiMR/gidw/CmoB0OXK7CzfV9K4I3UIVnVbbeMDfDN6dtoQ9bgv7e"><link rel="preload" href="/pgc_church-2f7c9a25a522d247_bg.wasm" crossorigin="anonymous" integrity="sha384-/FAZopwt1+uIiQvsDEoHTcJWe/nTU7ZVzUslCtwKF8IXq6nRKNUwUwKGwCgIsFCy" as="fetch" type="application/wasm"></head>
 <body>
     
 
 <script type="module">
-import init, * as bindings from '/pgc_church-cc7ba168cbae3a47.js';
-const wasm = await init({ module_or_path: '/pgc_church-cc7ba168cbae3a47_bg.wasm' });
+import init, * as bindings from '/pgc_church-2f7c9a25a522d247.js';
+const wasm = await init({ module_or_path: '/pgc_church-2f7c9a25a522d247_bg.wasm' });
 
 
 window.wasmBindings = bindings;

@@ -27,8 +27,8 @@ pub fn Home() -> impl IntoView {
         </div>
       </div>
 
-      <div class="text-center mb-12 float-animation">
-        <h1 class="text-5xl md:text-7xl font-light text-gray-900 leading-tight mb-2 tracking-tight text-glow">
+      <div class="text-center mb-12">
+        <h1 class="text-5xl md:text-7xl font-light leading-tight mb-2 tracking-tight text-glow" style="color: #4285F4;">
           PGC Church
         </h1>
         <div class="flex justify-center gap-1 mt-4">
@@ -38,8 +38,8 @@ pub fn Home() -> impl IntoView {
         </div>
       </div>
 
-        <div class="max-w-2xl mx-auto text-center float-animation-delayed mb-16">
-          <p class="text-xl md:text-2xl text-gray-700 font-light leading-relaxed">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <p class="text-2xl md:text-4xl text-gray-700 font-light leading-relaxed">
             Experience <span class="font-semibold" style="color: #4285F4;">faith</span>, 
             <span class="font-semibold" style="color: #EA4335;">community</span>, and 
             <span class="font-semibold" style="color: #34A853;">spiritual growth</span>
