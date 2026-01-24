@@ -6,11 +6,11 @@ use leptos::*;
 pub fn Events() -> impl IntoView {
     let today = Local::now().naive_local();
 
-    let current_day = NaiveDate::from_ymd_opt(today.year(), today.month(), today.day());
+    let (current_day, set_current_day) = signal(NaiveDate::from_ymd_opt(today.year(), today.month(), today.day()));
 
-    let day_from_0 = current_day.unwrap().day0();
+    let day_from_0 = current_day.get().unwrap().day0();
 
-    let start = current_day.unwrap() - Duration::days((day_from_0 + 2) as i64);
+    let start = current_day.get().unwrap() - Duration::days((day_from_0 + 2) as i64);
 
     let days = (0..42)
         .map(|i| {

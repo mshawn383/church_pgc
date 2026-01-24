@@ -18,6 +18,39 @@
    .church-header-and-prophet-name{
     font-weight: 700;
    }
+   @keyframes float {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+        
+        @keyframes float-delayed {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-15px);
+          }
+        }
+        
+        .float-animation {
+          animation: float 6s ease-in-out infinite;
+        }
+        
+        .float-animation-delayed {
+          animation: float-delayed 5s ease-in-out infinite 1s;
+        }
+        
+        .float-animation-delayed-2 {
+          animation: float-delayed 5.5s ease-in-out infinite 2s;
+        }
+        
+        .text-glow {
+          text-shadow: 0 0 30px rgba(66, 133, 244, 0.1);
+        }
 </style>
     <title>PGC Church</title>
 </head>

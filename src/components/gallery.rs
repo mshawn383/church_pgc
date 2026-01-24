@@ -12,15 +12,15 @@ pub fn Gallery() -> impl IntoView {
       All
     </button>
 
-    <button class="px-6 py-2 rounded-full bg-gray-100 border border-gray-200 text-gray-700 text-sm font-medium whitespace-nowrap hover:bg-gray-50 transition">
+    <button class="px-6 py-2 rounded-full bg-red-100 border border-[#EA4335] text-[#EA4335] text-sm font-medium whitespace-nowrap hover:bg-red-50 transition">
       Testimony
     </button>
 
-    <button class="px-6 py-2 rounded-full bg-gray-100 border border-gray-200 text-gray-700 text-sm font-medium whitespace-nowrap hover:bg-gray-50 transition">
+    <button class="px-6 py-2 rounded-full bg-yellow-100 border border-[#FBBC04] text-[#B88600] text-sm font-medium whitespace-nowrap hover:bg-yellow-50 transition">
       Shorts
     </button>
 
-    <button class="px-6 py-2 rounded-full bg-gray-100 border border-gray-200 text-gray-700 text-sm font-medium whitespace-nowrap hover:bg-gray-50 transition">
+    <button class="px-6 py-2 rounded-full bg-green-100 border border-[#34A853] text-[#34A853] text-sm font-medium whitespace-nowrap hover:bg-green-50 transition">
       Sermon
     </button>
   </div>

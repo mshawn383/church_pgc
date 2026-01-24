@@ -11,24 +11,24 @@ pub fn Navigation() -> impl IntoView {
           <div class="max-w-7xl mx-auto flex items-center">
 
             <div class="flex-1">
-              <span class="text-2xl font-light text-[#4285F4] cursor-pointer font-extrabold" on:click=move |_| navigate.clone()("/",Default::default())>PGC</span>
+              <span class="text-2xl font-extrabold text-[#4285F4] cursor-pointer" on:click=move |_| navigate.clone()("/",Default::default())>PGC</span>
             </div>
 
 
             <div class="flex-1 hidden md:flex items-center justify-center space-x-8">
               <A href="/daily-quotes" attr:class="text-gray-700 font-medium hover:text-[#4285F4] transition">Daily Quotes</A>
 
-              <A href="https://www.youtube.com/@2025prophetAmrit" attr:class="px-4 py-2 rounded text-white bg-[#EA4335] hover:bg-[#D33425] transition font-medium text-sm" >
+              <A href="https://www.youtube.com/@2025prophetAmrit" attr:class="px-4 py-2 rounded text-white bg-[#EA4335] hover:bg-[#D33425] transition font-medium text-sm"  target="_blank">
                 YouTube
               </A>
 
 
-              <A href="/gallery" attr:class="text-gray-700 font-medium hover:text-[#4285F4] transition">Gallery</A>
+              <A href="/gallery" attr:class="text-gray-700 font-medium hover:text-[#34A853] transition">Gallery</A>
             </div>
 
 
             <div class="flex-1 flex justify-end">
-              <a href="#" class="text-gray-700 font-medium hover:text-[#4285F4] transition">Login</a>
+              <a href="#" class="px-4 py-2 rounded font-medium text-white bg-[#4285F4] hover:bg-[#3367D6] transition">Login</a>
             </div>
 
           </div>
