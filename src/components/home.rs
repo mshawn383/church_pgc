@@ -2,7 +2,7 @@ use leptos::prelude::*;
 use leptos_router::{components::A, hooks::use_navigate};
 #[component]
 pub fn Home() -> impl IntoView {
-    view! {
+    view! {    
 
 
 
@@ -10,12 +10,15 @@ pub fn Home() -> impl IntoView {
           class="relative w-full h-[95vh] bg-gradient-to-br from-white via-blue-50 to-white flex flex-col overflow-hidden"
         >
 
-         <div class="relative h-[80vh] flex flex-col items-stretch justify-between w-full">
+         <div class="absolute inset-0 flex items-center justify-center opacity-5">
+          <div class="text-9xl font-light text-gray-400">"✦"</div>
+         </div>
 
-      {/* Image Section - Left Half */}
-      <div class="w-full overflow-hidden">
-        <div class="relative w-full h-full rounded-r-3xl overflow-hidden shadow-2xl border-4 border-white">
-          <img
+         <div class="relative h-full flex flex-col items-center justify-center w-full">
+      
+      <div class="mb-12 px-4 w-full">
+        <div class="relative w-full h-64 md:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+          <img 
             src="https://images.pexels.com/photos/3942683/pexels-photo-3942683.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="PGC Church Community"
             class="w-full h-full object-cover"
@@ -24,42 +27,45 @@ pub fn Home() -> impl IntoView {
         </div>
       </div>
 
-      {/* Content Section - Right Half */}
-      <div class="w-full flex flex-col items-center justify-center px-12">
-
-        <div class="text-center mb-8">
-          <div class="flex justify-center gap-1 mt-4">
-            <div class="w-1.5 h-1.5 rounded-full" style="background-color: #4285F4;"></div>
-            <div class="w-1.5 h-1.5 rounded-full" style="background-color: #EA4335;"></div>
-            <div class="w-1.5 h-1.5 rounded-full" style="background-color: #FBBC04;"></div>
-          </div>
+      <div class="text-center mb-12">
+        <h1 class="text-5xl md:text-7xl font-light leading-tight mb-2 tracking-tight text-glow" style="color: #4285F4;">
+          PGC Church
+        </h1>
+        <div class="flex justify-center gap-1 mt-4">
+          <div class="w-1.5 h-1.5 rounded-full" style="background-color: #4285F4;"></div>
+          <div class="w-1.5 h-1.5 rounded-full" style="background-color: #EA4335;"></div>
+          <div class="w-1.5 h-1.5 rounded-full" style="background-color: #FBBC04;"></div>
         </div>
+      </div>
 
-        <div class="w-3xl text-center mb-12">
-          <p class="text-4xl md:text-3xl text-gray-700 font-light leading-relaxed">
-           I am the way the truth and the life.
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <p class="text-2xl md:text-4xl text-gray-700 font-light leading-relaxed">
+            Experience <span class="font-semibold" style="color: #4285F4;">faith</span>, 
+            <span class="font-semibold" style="color: #EA4335;">community</span>, and 
+            <span class="font-semibold" style="color: #34A853;">spiritual growth</span>
           </p>
         </div>
 
-        <div class="flex flex-col gap-4 sm:flex-row sm:gap-6">
-          <A
-            href="/events"
-            attr:class="px-10 py-3 bg-[#4285F4] text-white font-medium rounded-full text-base hover:shadow-lg hover:scale-105 transition-all duration-300"
-          >
-            Upcoming Events
-          </A>
+     <div class="flex flex-col gap-4 sm:flex-row sm:gap-6">
 
-          <a
-            href="#"
-            class="px-10 py-3 border-2 border-[#EA4335] text-[#EA4335] font-medium rounded-full text-base hover:bg-red-50 hover:scale-105 transition-all duration-300"
-          >
-            Send Prayer Request
-          </a>
-        </div>
-      </div>
+      <A
+        href="/events"
+        attr:class="px-10 py-3 bg-[#4285F4] text-white font-medium rounded-full text-base hover:shadow-lg hover:scale-105 transition-all duration-300"
+      >
+        Upcoming Events
+      </A>
+
+      <a
+        href="#"
+        class="px-10 py-3 border-2 border-[#EA4335] text-[#EA4335] font-medium rounded-full text-base hover:bg-red-50 hover:scale-105 transition-all duration-300"
+      >
+        Send Prayer Request
+      </a>
+
+    </div>
     </div>
 
         </section>
-
+     
       }
 }

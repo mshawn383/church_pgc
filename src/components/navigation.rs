@@ -4,7 +4,8 @@ use leptos_router::{components::A, hooks::use_navigate};
 #[component]
 pub fn Navigation() -> impl IntoView {
     let navigate = use_navigate();
-
+   
+ 
     view! {
         <nav class="w-full bg-white border-b border-gray-200 px-6 py-4 shadow-sm">
           <div class="max-w-7xl mx-auto flex items-center">
