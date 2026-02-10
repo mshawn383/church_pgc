@@ -10,13 +10,13 @@ pub fn DailyQuotes() -> impl IntoView {
     font-sans
 ">
 
-  
-  <h1 class="text-3xl font-light text-center mb-12">
-    Daily Quotes
-  </h1>
+
+      <h1 class="text-3xl font-light text-center mb-12">
+        Daily Quotes
+      </h1>
 
 
-  <div class="
+      <div class="
       bg-gradient-to-br from-[#4285F4] to-[#34A853]
       rounded-lg
       shadow-md
@@ -27,27 +27,27 @@ pub fn DailyQuotes() -> impl IntoView {
       mb-20
       text-white
   ">
-    <p class="text-3xl font-light leading-tight mb-6">
-      The Lord is my shepherd; I shall not want.
-    </p>
-    <p class="text-white/90 text-base italic">
-      Psalm 23:1
-    </p>
-  </div>
-
- 
-  <div class="flex items-center justify-center my-10 px-6">
-    <div class="flex-1 border-t border-gray-200"></div>
-    <span class="px-6 text-xs tracking-widest uppercase text-gray-400">
-      Previous Quotes
-    </span>
-    <div class="flex-1 border-t border-gray-200"></div>
-  </div>
+        <p class="text-3xl font-light leading-tight mb-6">
+          The Lord is my shepherd; I shall not want.
+        </p>
+        <p class="text-white/90 text-base italic">
+          Psalm 23:1
+        </p>
+      </div>
 
 
-  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 pb-20">
+      <div class="flex items-center justify-center my-10 px-6">
+        <div class="flex-1 border-t border-gray-200"></div>
+        <span class="px-6 text-xs tracking-widest uppercase text-gray-400">
+          Previous Quotes
+        </span>
+        <div class="flex-1 border-t border-gray-200"></div>
+      </div>
 
-    <div class="
+
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 pb-20">
+
+        <div class="
         bg-white 
         rounded-lg 
         p-6 
@@ -56,18 +56,18 @@ pub fn DailyQuotes() -> impl IntoView {
         min-h-[200px]
         hover:shadow-md transition-shadow
     ">
-      <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
-        Be the change you wish to see in the world.
-      </p>
-      <p class="text-sm text-gray-600 italic">
-        Mahatma Gandhi
-      </p>
-      <p class="text-xs text-gray-400 mt-auto pt-6">
-        Nov 16, 2023
-      </p>
-    </div>
+          <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
+            Be the change you wish to see in the world.
+          </p>
+          <p class="text-sm text-gray-600 italic">
+            Mahatma Gandhi
+          </p>
+          <p class="text-xs text-gray-400 mt-auto pt-6">
+            Nov 16, 2023
+          </p>
+        </div>
 
-    <div class="
+        <div class="
         bg-white 
         rounded-lg 
         p-6 
@@ -76,18 +76,18 @@ pub fn DailyQuotes() -> impl IntoView {
         min-h-[200px]
         hover:shadow-md transition-shadow
     ">
-      <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
-        In three words I can sum up everything I ve learned about life: it goes on.
-      </p>
-      <p class="text-sm text-gray-600 italic">
-        Robert Frost
-      </p>
-      <p class="text-xs text-gray-400 mt-auto pt-6">
-        Nov 15, 2023
-      </p>
-    </div>
+          <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
+            In three words I can sum up everything I ve learned about life: it goes on.
+          </p>
+          <p class="text-sm text-gray-600 italic">
+            Robert Frost
+          </p>
+          <p class="text-xs text-gray-400 mt-auto pt-6">
+            Nov 15, 2023
+          </p>
+        </div>
 
-    <div class="
+        <div class="
         bg-white 
         rounded-lg 
         p-6 
@@ -96,18 +96,18 @@ pub fn DailyQuotes() -> impl IntoView {
         min-h-[200px]
         hover:shadow-md transition-shadow
     ">
-      <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
-        The only way to do great work is to love what you do.
-      </p>
-      <p class="text-sm text-gray-600 italic">
-        Steve Jobs
-      </p>
-      <p class="text-xs text-gray-400 mt-auto pt-6">
-        Nov 14, 2023
-      </p>
-    </div>
+          <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
+            The only way to do great work is to love what you do.
+          </p>
+          <p class="text-sm text-gray-600 italic">
+            Steve Jobs
+          </p>
+          <p class="text-xs text-gray-400 mt-auto pt-6">
+            Nov 14, 2023
+          </p>
+        </div>
 
-    <div class="
+        <div class="
         bg-white 
         rounded-lg 
         p-6 
@@ -116,18 +116,18 @@ pub fn DailyQuotes() -> impl IntoView {
         min-h-[200px]
         hover:shadow-md transition-shadow
     ">
-      <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
-        Life is either a daring adventure or nothing at all.
-      </p>
-      <p class="text-sm text-gray-600 italic">
-        Helen Keller
-      </p>
-      <p class="text-xs text-gray-400 mt-auto pt-6">
-        Nov 12, 2023
-      </p>
-    </div>
+          <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
+            Life is either a daring adventure or nothing at all.
+          </p>
+          <p class="text-sm text-gray-600 italic">
+            Helen Keller
+          </p>
+          <p class="text-xs text-gray-400 mt-auto pt-6">
+            Nov 12, 2023
+          </p>
+        </div>
 
-    <div class="
+        <div class="
         bg-white 
         rounded-lg 
         p-6 
@@ -136,18 +136,18 @@ pub fn DailyQuotes() -> impl IntoView {
         min-h-[200px]
         hover:shadow-md transition-shadow
     ">
-      <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
-        The purpose of our lives is to be happy.
-      </p>
-      <p class="text-sm text-gray-600 italic">
-        Dalai Lama
-      </p>
-      <p class="text-xs text-gray-400 mt-auto pt-6">
-        Nov 11, 2023
-      </p>
-    </div>
+          <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
+            The purpose of our lives is to be happy.
+          </p>
+          <p class="text-sm text-gray-600 italic">
+            Dalai Lama
+          </p>
+          <p class="text-xs text-gray-400 mt-auto pt-6">
+            Nov 11, 2023
+          </p>
+        </div>
 
-    <div class="
+        <div class="
         bg-white 
         rounded-lg 
         p-6 
@@ -156,18 +156,18 @@ pub fn DailyQuotes() -> impl IntoView {
         min-h-[200px]
         hover:shadow-md transition-shadow
     ">
-      <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
-        Be yourself; everyone else is already taken.
-      </p>
-      <p class="text-sm text-gray-600 italic">
-        Oscar Wilde
-      </p>
-      <p class="text-xs text-gray-400 mt-auto pt-6">
-        Nov 10, 2023
-      </p>
-    </div>
+          <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
+            Be yourself; everyone else is already taken.
+          </p>
+          <p class="text-sm text-gray-600 italic">
+            Oscar Wilde
+          </p>
+          <p class="text-xs text-gray-400 mt-auto pt-6">
+            Nov 10, 2023
+          </p>
+        </div>
 
-    <div class="
+        <div class="
         bg-white 
         rounded-lg 
         p-6 
@@ -176,17 +176,17 @@ pub fn DailyQuotes() -> impl IntoView {
         min-h-[200px]
         hover:shadow-md transition-shadow
     ">
-      <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
-        It is during our darkest moments that we must focus on the light.
-      </p>
-      <p class="text-sm text-gray-600 italic">
-        Aristotle
-      </p>
-      <p class="text-xs text-gray-400 mt-auto pt-6">
-        Nov 09, 2023
-      </p>
+          <p class="text-base font-medium leading-relaxed mb-4 text-gray-900">
+            It is during our darkest moments that we must focus on the light.
+          </p>
+          <p class="text-sm text-gray-600 italic">
+            Aristotle
+          </p>
+          <p class="text-xs text-gray-400 mt-auto pt-6">
+            Nov 09, 2023
+          </p>
+        </div>
     </div>
-</div>
-</div>
-        }
+    </div>
+            }
 }
