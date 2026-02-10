@@ -85,7 +85,7 @@ pub fn Gallery() -> impl IntoView {
         </div>
       </div>
     </div>
-Hello
+
   </div>
 </div>
     }
