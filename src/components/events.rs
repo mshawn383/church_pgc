@@ -90,22 +90,22 @@ pub fn Events() -> impl IntoView {
                 view! {
                     <div class=format!(
                         "calendar-cell bg-white min-h-[100px] p-2 relative transition hover:bg-gray-50 {}",
-                        if is_today { "bg-blue-50 border-2 border-[#4285F4]" } else { "" }
+                        if is_today { "bg-amber-50 border-2 border-amber-600" } else { "" }
                     )>
 
                         <span class=format!(
                             "date-number block text-sm font-medium mb-2 {}",
-                            if is_today { "text-[#4285F4] font-semibold" } else { "text-gray-700" }
+                            if is_today { "text-amber-600 font-semibold" } else { "text-gray-700" }
                         )>
                             {day.day()}
                         </span>
 
                       
-                        <div class="event-pill event-worship text-[0.65rem] px-2 py-0.5 rounded text-white bg-[#4285F4] cursor-pointer mb-1">
+                        <div class="event-pill event-worship text-[0.65rem] px-2 py-0.5 rounded text-white bg-amber-600 cursor-pointer mb-1">
                             "Worship"
                         </div>
 
-                        <div class="event-pill event-youth text-[0.65rem] px-2 py-0.5 rounded text-white bg-[#34A853] cursor-pointer">
+                        <div class="event-pill event-youth text-[0.65rem] px-2 py-0.5 rounded text-white bg-rose-600 cursor-pointer">
                             "Youth"
                         </div>
 
@@ -122,14 +122,14 @@ pub fn Events() -> impl IntoView {
 
   <div class="flex items-center justify-between mb-6 border-b border-gray-100 pb-4">
     <h2 class="font-light text-xl text-gray-900">Upcoming Events</h2>
-    <a href="#" class="text-sm text-[#4285F4] font-medium hover:underline">
+    <a href="#" class="text-sm text-amber-600 font-medium hover:underline">
       View All
     </a>
   </div>
 
   <div class="flex gap-4 pb-4 mb-4 border-b border-gray-100">
 
-    <div class="flex flex-col items-center justify-center min-w-12 h-12 rounded-lg bg-[#4285F4] text-white text-center">
+    <div class="flex flex-col items-center justify-center min-w-12 h-12 rounded-lg bg-amber-600 text-white text-center">
       <span class="text-[0.6rem] font-medium uppercase leading-tight">FEB</span>
       <span class="text-base font-semibold">12</span>
     </div>
@@ -145,7 +145,7 @@ pub fn Events() -> impl IntoView {
 
       <div class="flex items-center justify-between text-xs text-gray-500">
         <span>10:00 AM</span>
-        <span class="text-[#4285F4] font-medium cursor-pointer hover:underline">
+        <span class="text-amber-600 font-medium cursor-pointer hover:underline">
           Details
         </span>
       </div>
@@ -154,7 +154,7 @@ pub fn Events() -> impl IntoView {
 
   
   <div class="flex gap-4 pb-4 mb-4 border-b border-gray-100">
-    <div class="flex flex-col items-center justify-center min-w-12 h-12 rounded-lg bg-[#34A853] text-white text-center">
+    <div class="flex flex-col items-center justify-center min-w-12 h-12 rounded-lg bg-rose-600 text-white text-center">
       <span class="text-[0.6rem] font-medium uppercase leading-tight">FEB</span>
       <span class="text-base font-semibold">14</span>
     </div>
@@ -169,7 +169,7 @@ pub fn Events() -> impl IntoView {
 
       <div class="flex items-center justify-between text-xs text-gray-500">
         <span>Wednesday</span>
-        <span class="text-[#4285F4] font-medium cursor-pointer hover:underline">
+        <span class="text-amber-600 font-medium cursor-pointer hover:underline">
           Details
         </span>
       </div>
@@ -178,7 +178,7 @@ pub fn Events() -> impl IntoView {
 
  
   <div class="flex gap-4">
-    <div class="flex flex-col items-center justify-center min-w-12 h-12 rounded-lg bg-[#FBBC04] text-white text-center">
+    <div class="flex flex-col items-center justify-center min-w-12 h-12 rounded-lg bg-orange-600 text-white text-center">
       <span class="text-[0.6rem] font-medium uppercase leading-tight">FEB</span>
       <span class="text-base font-semibold">16</span>
     </div>
@@ -193,7 +193,7 @@ pub fn Events() -> impl IntoView {
 
       <div class="flex items-center justify-between text-xs text-gray-500">
         <span>Friday</span>
-        <span class="text-[#4285F4] font-medium cursor-pointer hover:underline">
+        <span class="text-amber-600 font-medium cursor-pointer hover:underline">
           Details
         </span>
       </div>

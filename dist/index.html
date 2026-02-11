@@ -18,16 +18,54 @@
    .church-header-and-prophet-name{
     font-weight: 700;
    }
+
+   /* Custom animations for church home page */
+   @keyframes blob {
+     0% {
+       transform: translate(0px, 0px) scale(1);
+     }
+     33% {
+       transform: translate(30px, -50px) scale(1.1);
+     }
+     66% {
+       transform: translate(-20px, 20px) scale(0.9);
+     }
+     100% {
+       transform: translate(0px, 0px) scale(1);
+     }
+   }
+
+   .animate-blob {
+     animation: blob 7s infinite;
+   }
+
+   .animation-delay-2000 {
+     animation-delay: 2s;
+   }
+
+   .animation-delay-4000 {
+     animation-delay: 4s;
+   }
+
+   /* Smooth scroll behavior */
+   html {
+     scroll-behavior: smooth;
+   }
+
+   /* Enhanced gradient text */
+   .text-glow {
+     text-shadow: 0 0 20px rgba(66, 133, 244, 0.3);
+   }
   
 </style>
     <title>PGC Church</title>
-<link rel="modulepreload" href="/pgc_church-2f7c9a25a522d247.js" crossorigin="anonymous" integrity="sha384-f5LYfU+K7cwLoiMR/gidw/CmoB0OXK7CzfV9K4I3UIVnVbbeMDfDN6dtoQ9bgv7e"><link rel="preload" href="/pgc_church-2f7c9a25a522d247_bg.wasm" crossorigin="anonymous" integrity="sha384-/FAZopwt1+uIiQvsDEoHTcJWe/nTU7ZVzUslCtwKF8IXq6nRKNUwUwKGwCgIsFCy" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/pgc_church-8574247b523501a.js" crossorigin="anonymous" integrity="sha384-hgLLu3C8QDG10Tm+KmdRyVFW8dKueW7pkZ5y09ZrZbOPiN67kIHFCiuJ/FqwRoWX"><link rel="preload" href="/pgc_church-8574247b523501a_bg.wasm" crossorigin="anonymous" integrity="sha384-yAd/59udL8Jl+q+GO+Iouzbl/LChc/RrkgbgoPFxRYesoFYlrd7Dmnbbau6yHPnQ" as="fetch" type="application/wasm"></head>
 <body>
     
 
 <script type="module">
-import init, * as bindings from '/pgc_church-2f7c9a25a522d247.js';
-const wasm = await init({ module_or_path: '/pgc_church-2f7c9a25a522d247_bg.wasm' });
+import init, * as bindings from '/pgc_church-8574247b523501a.js';
+const wasm = await init({ module_or_path: '/pgc_church-8574247b523501a_bg.wasm' });
 
 
 window.wasmBindings = bindings;

@@ -17,7 +17,7 @@ pub fn DailyQuotes() -> impl IntoView {
 
 
   <div class="
-      bg-gradient-to-br from-[#4285F4] to-[#34A853]
+      bg-gradient-to-br from-amber-600 to-rose-600
       rounded-lg
       shadow-md
       p-12 
@@ -51,7 +51,7 @@ pub fn DailyQuotes() -> impl IntoView {
         bg-white 
         rounded-lg 
         p-6 
-        border-l-4 border-l-[#4285F4] border border-gray-200 
+        border-l-4 border-l-amber-600 border border-gray-200 
         flex flex-col 
         min-h-[200px]
         hover:shadow-md transition-shadow
@@ -71,7 +71,7 @@ pub fn DailyQuotes() -> impl IntoView {
         bg-white 
         rounded-lg 
         p-6 
-        border-l-4 border-l-[#EA4335] border border-gray-200 
+        border-l-4 border-l-rose-600 border border-gray-200 
         flex flex-col 
         min-h-[200px]
         hover:shadow-md transition-shadow
@@ -91,7 +91,7 @@ pub fn DailyQuotes() -> impl IntoView {
         bg-white 
         rounded-lg 
         p-6 
-        border-l-4 border-l-[#FBBC04] border border-gray-200 
+        border-l-4 border-l-orange-600 border border-gray-200 
         flex flex-col 
         min-h-[200px]
         hover:shadow-md transition-shadow
@@ -111,7 +111,7 @@ pub fn DailyQuotes() -> impl IntoView {
         bg-white 
         rounded-lg 
         p-6 
-        border-l-4 border-l-[#4285F4] border border-gray-200 
+        border-l-4 border-l-amber-600 border border-gray-200 
         flex flex-col 
         min-h-[200px]
         hover:shadow-md transition-shadow
@@ -131,7 +131,7 @@ pub fn DailyQuotes() -> impl IntoView {
         bg-white 
         rounded-lg 
         p-6 
-        border-l-4 border-l-[#EA4335] border border-gray-200 
+        border-l-4 border-l-rose-600 border border-gray-200 
         flex flex-col 
         min-h-[200px]
         hover:shadow-md transition-shadow
@@ -151,7 +151,7 @@ pub fn DailyQuotes() -> impl IntoView {
         bg-white 
         rounded-lg 
         p-6 
-        border-l-4 border-l-[#FBBC04] border border-gray-200 
+        border-l-4 border-l-orange-600 border border-gray-200 
         flex flex-col 
         min-h-[200px]
         hover:shadow-md transition-shadow
@@ -171,7 +171,7 @@ pub fn DailyQuotes() -> impl IntoView {
         bg-white 
         rounded-lg 
         p-6 
-        border-l-4 border-l-[#34A853] border border-gray-200 
+        border-l-4 border-l-amber-700 border border-gray-200 
         flex flex-col 
         min-h-[200px]
         hover:shadow-md transition-shadow

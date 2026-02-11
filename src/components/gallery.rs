@@ -8,19 +8,19 @@ pub fn Gallery() -> impl IntoView {
   <h1 class="text-3xl font-light mb-8">Gallery</h1>
 
   <div class="flex gap-2 mb-10 overflow-x-auto pb-4">
-    <button class="px-6 py-2 rounded-full bg-[#4285F4] text-white text-sm font-medium whitespace-nowrap transition hover:shadow-md">
+    <button class="px-6 py-2 rounded-full bg-amber-600 text-white text-sm font-medium whitespace-nowrap transition hover:shadow-md">
       All
     </button>
 
-    <button class="px-6 py-2 rounded-full bg-red-100 border border-[#EA4335] text-[#EA4335] text-sm font-medium whitespace-nowrap hover:bg-red-50 transition">
+    <button class="px-6 py-2 rounded-full bg-rose-100 border border-rose-600 text-rose-600 text-sm font-medium whitespace-nowrap hover:bg-rose-50 transition">
       Testimony
     </button>
 
-    <button class="px-6 py-2 rounded-full bg-yellow-100 border border-[#FBBC04] text-[#B88600] text-sm font-medium whitespace-nowrap hover:bg-yellow-50 transition">
+    <button class="px-6 py-2 rounded-full bg-orange-100 border border-orange-600 text-orange-600 text-sm font-medium whitespace-nowrap hover:bg-orange-50 transition">
       Shorts
     </button>
 
-    <button class="px-6 py-2 rounded-full bg-green-100 border border-[#34A853] text-[#34A853] text-sm font-medium whitespace-nowrap hover:bg-green-50 transition">
+    <button class="px-6 py-2 rounded-full bg-amber-100 border border-amber-700 text-amber-700 text-sm font-medium whitespace-nowrap hover:bg-amber-50 transition">
       Sermon
     </button>
   </div>
@@ -39,7 +39,7 @@ pub fn Gallery() -> impl IntoView {
 
         <div class="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/30 transition">
           <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <svg class="w-7 h-7 text-[#4285F4]" fill="currentColor" viewBox="0 0 24 24">
+            <svg class="w-7 h-7 text-amber-600" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8 5v14l11-7z"/>
             </svg>
           </div>
@@ -52,7 +52,7 @@ pub fn Gallery() -> impl IntoView {
         </h3>
 
         <div class="flex justify-between items-center text-xs text-gray-600 mt-3">
-          <span class="text-[#4285F4] font-medium">Hillsong Worship</span>
+          <span class="text-amber-600 font-medium">Hillsong Worship</span>
           <span>1.2M views</span>
         </div>
       </div>
@@ -67,7 +67,7 @@ pub fn Gallery() -> impl IntoView {
 
         <div class="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/30 transition">
           <div class="w-14 h-14 bg-white/90 rounded-full flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <svg class="w-7 h-7 text-[#4285F4]" fill="currentColor" viewBox="0 0 24 24">
+            <svg class="w-7 h-7 text-amber-600" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8 5v14l11-7z"/>
             </svg>
           </div>
@@ -80,7 +80,7 @@ pub fn Gallery() -> impl IntoView {
         </h3>
 
         <div class="flex justify-between items-center text-xs text-gray-600 mt-3">
-          <span class="text-[#4285F4] font-medium">Revive Youth</span>
+          <span class="text-amber-600 font-medium">Revive Youth</span>
           <span>98K views</span>
         </div>
       </div>
