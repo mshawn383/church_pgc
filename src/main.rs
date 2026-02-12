@@ -6,11 +6,12 @@ mod components;
 mod supabase;
 
 use components::daily_quotes::DailyQuotes;
+use components::dashboard::Dashboard;
 use components::events::Events;
-use components::home::Home;
-use components::navigation::Navigation;
-
 use components::gallery::Gallery;
+use components::home::Home;
+use components::login::Login;
+use components::navigation::Navigation;
 
 fn main() {
     mount_to_body(|| {
@@ -19,6 +20,8 @@ fn main() {
          <Navigation />
                   <Routes fallback=|| "Not found.">
                       <Route path=path!("/") view=Home />
+                      <Route path=path!("/login") view=Login />
+                      <Route path=path!("/dashboard") view=Dashboard />
                       <Route path=path!("/daily-quotes") view=DailyQuotes />
                       <Route path=path!("/events") view=Events />
                       <Route path=path!("/gallery") view=Gallery />

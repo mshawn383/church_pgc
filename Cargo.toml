@@ -6,6 +6,7 @@ edition = "2024"
 [dependencies]
 chrono = "0.4.43"
 dotenvy = "0.15.7"
+gloo-timers = { version = "0.3", features = ["futures"] }
 leptos = { version = "0.8.15", features = ["csr"] }
 leptos_router = "0.8.11"
 reqwest = { version = "0.13.2", features = ["json"] }

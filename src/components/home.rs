@@ -75,27 +75,27 @@ pub fn Home() -> impl IntoView {
        </div>
 
        // Feature cards
-       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12 w-full">
+      //  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12 w-full">
          
-         <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-amber-100">
-           <div class="text-4xl mb-4">"🙏"</div>
-           <h3 class="text-xl font-bold text-gray-800 mb-2">"Weekly Worship"</h3>
-           <p class="text-gray-600">"Join us every Sunday for uplifting worship and powerful messages"</p>
-         </div>
+      //    <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-amber-100">
+      //      <div class="text-4xl mb-4">"🙏"</div>
+      //      <h3 class="text-xl font-bold text-gray-800 mb-2">"Weekly Worship"</h3>
+      //      <p class="text-gray-600">"Join us every Sunday for uplifting worship and powerful messages"</p>
+      //    </div>
 
-         <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-rose-100">
-           <div class="text-4xl mb-4">"❤️"</div>
-           <h3 class="text-xl font-bold text-gray-800 mb-2">"Community Care"</h3>
-           <p class="text-gray-600">"Experience genuine fellowship and support in our loving community"</p>
-         </div>
+      //    <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-rose-100">
+      //      <div class="text-4xl mb-4">"❤️"</div>
+      //      <h3 class="text-xl font-bold text-gray-800 mb-2">"Community Care"</h3>
+      //      <p class="text-gray-600">"Experience genuine fellowship and support in our loving community"</p>
+      //    </div>
 
-         <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-orange-100">
-           <div class="text-4xl mb-4">"📖"</div>
-           <h3 class="text-xl font-bold text-gray-800 mb-2">"Bible Study"</h3>
-           <p class="text-gray-600">"Grow deeper in faith through engaging Bible studies and prayer"</p>
-         </div>
+      //    <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-orange-100">
+      //      <div class="text-4xl mb-4">"📖"</div>
+      //      <h3 class="text-xl font-bold text-gray-800 mb-2">"Bible Study"</h3>
+      //      <p class="text-gray-600">"Grow deeper in faith through engaging Bible studies and prayer"</p>
+      //    </div>
 
-       </div>
+      //  </div>
 
        // Call-to-action buttons with enhanced styling
        <div class="flex flex-col gap-4 sm:flex-row sm:gap-6 mb-8">
@@ -143,3 +143,4 @@ pub fn Home() -> impl IntoView {
      
       }
 }
+

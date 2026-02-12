@@ -28,7 +28,7 @@ pub fn Navigation() -> impl IntoView {
 
 
             <div class="flex-1 flex justify-end">
-              <a href="#" class="px-4 py-2 rounded font-medium text-white bg-amber-600 hover:bg-amber-700 transition">Login</a>
+              <A href="/login" attr:class="px-4 py-2 rounded font-medium text-white bg-amber-600 hover:bg-amber-700 transition">Login</A>
             </div>
 
           </div>
