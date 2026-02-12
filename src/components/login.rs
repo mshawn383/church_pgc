@@ -1,7 +1,38 @@
-use leptos::prelude::*;
+use leptos::{ev::SubmitEvent, prelude::*, task::spawn_local};
+use leptos_router::hooks::use_navigate;
+use crate::supabase::{supabase_login, SupabaseSession};
 
 #[component]
 pub fn Login() -> impl IntoView {
+    let (email, set_email) = signal::<String>(String::new());
+    let (password, set_password) = signal::<String>(String::new());
+    let (_session, set_session) = signal(None::<SupabaseSession>);
+    let navigate = use_navigate();
+
+    let handle_login = move |ev: SubmitEvent| {
+        ev.prevent_default();
+        let navigate = navigate.clone();
+        let email = email.get();
+        let password = password.get();
+
+
+        spawn_local(async move {
+            let result = supabase_login(
+                "http://192.168.31.106:8000",
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyAgCiAgICAicm9sZSI6ICJhbm9uIiwKICAgICJpc3MiOiAic3VwYWJhc2UtZGVtbyIsCiAgICAiaWF0IjogMTY0MTc2OTIwMCwKICAgICJleHAiOiAxNzk5NTM1NjAwCn0.dc_X5iR_VP_qT0zsiyj_I_OZ2T9FtRU2BBNWN8Bu4GE",
+                &email,
+                &password,
+            )
+            .await;
+
+            if let Ok(sess) = result {
+                set_session.set(Some(sess));
+
+                // Navigate to dashboard after successful login
+                navigate("/dashboard", Default::default());
+            }
+        });
+    };
     view! {
         <div class="relative w-full min-h-screen bg-gradient-to-br from-amber-50 via-white to-rose-50 flex items-center justify-center overflow-hidden">
             
@@ -28,11 +59,13 @@ pub fn Login() -> impl IntoView {
                         <h1 class="text-3xl font-bold text-white mb-2">"Welcome Back"</h1>
                         <p class="text-amber-50 text-sm">"Sign in to continue your spiritual journey"</p>
                     </div>
-
+  {move || _session.get().map(|s| view! {
+                <p>"Logged in. Token: " {s.access_token.clone()}</p>
+            })}
                     // Form Section
                     <div class="px-8 py-10">
                         
-                        <form class="space-y-6">
+                        <form class="space-y-6" on:submit=handle_login>
                             
                             // Email Input
                             <div>
@@ -46,6 +79,7 @@ pub fn Login() -> impl IntoView {
                                     <input
                                         type="email"
                                         id="email"
+                                        on:input=move |ev| set_email.set(event_target_value(&ev))
                                         placeholder="your.email@example.com"
                                         class="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 transition-all outline-none text-gray-700"
                                     />
@@ -64,6 +98,7 @@ pub fn Login() -> impl IntoView {
                                     <input
                                         type="password"
                                         id="password"
+                                        on:input=move |ev| set_password.set(event_target_value(&ev))
                                         placeholder="Enter your password"
                                         class="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-100 transition-all outline-none text-gray-700"
                                     />
@@ -148,3 +183,4 @@ pub fn Login() -> impl IntoView {
         </div>
     }
 }
+

@@ -12,6 +12,7 @@ use components::gallery::Gallery;
 use components::home::Home;
 use components::login::Login;
 use components::navigation::Navigation;
+use supabase::auth::Authentication;
 
 fn main() {
     mount_to_body(|| {
