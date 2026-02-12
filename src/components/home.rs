@@ -26,7 +26,7 @@ pub fn Home() -> impl IntoView {
          <div class="relative h-full flex flex-col items-center justify-center w-full py-12 px-4">
        
        // Hero Image with enhanced styling - BIGGER SIZE
-       <div class="mb-12 w-full max-w-7xl">
+       <div class="mb-12 w-full max-w-[90rem]">
          <div class="relative w-full h-96 md:h-[40rem] lg:h-[45rem] rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform hover:scale-[1.02] transition-transform duration-500">
            <img 
              src="https://images.pexels.com/photos/3942683/pexels-photo-3942683.jpeg?auto=compress&cs=tinysrgb&w=600"
