@@ -3,6 +3,7 @@ use leptos::prelude::*;
 use leptos_router::components::{Route, Router, Routes};
 use leptos_router::path;
 mod components;
+mod supabase;
 
 use components::daily_quotes::DailyQuotes;
 use components::events::Events;

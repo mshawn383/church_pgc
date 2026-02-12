@@ -1,10 +1,11 @@
+use leptos::prelude::*;
 #[component]
 pub fn Login() -> impl IntoView {
-    let email = create_rw_signal(String::new());
-    let password = create_rw_signal(String::new());
-    let session = create_rw_signal(None::<SupabaseSession>);
+    let email = signal(String::new());
+    let password = signal(String::new());
+    let session = signal(None::<SupabaseSession>);
 
-    let login_action = create_action(move |_| {
+    let login_action = Action::new(move |_| {
         let email = email.get();
         let password = password.get();
 
